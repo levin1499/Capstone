@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -7,7 +9,6 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  transition: 0.2s linear;
 }
 
 html {
@@ -36,7 +37,7 @@ section {
 
 .heading {
   font-size: 4rem;
-  color: #ffd700;
+  color: #020255;
   text-align: center;
   text-transform: uppercase;
   font-weight: bolder;
@@ -137,7 +138,7 @@ section {
 .home .slide .content h3 {
   font-size: 4rem;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffd700;
   line-height: 1.1;
   padding: 2rem 0;
 }
@@ -147,14 +148,12 @@ section {
   height: 5rem;
   width: 5rem;
   line-height: 5rem;
-  background: #fff;
-  color: #333;
+  color: #020255;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background: #020255;
-  color: #fff;
+  color: #ffd700;
 }
 
 .swiper-button-next::after,
@@ -198,6 +197,7 @@ section {
 }
 
 /* end */
+/* reservation */
 .reservation form {
   padding: 2rem;
   border: 0.2rem solid rgba(0, 0, 0, 0.1);
@@ -226,7 +226,7 @@ section {
   padding: 1rem 0;
   margin: 1rem 0;
   border-bottom: 0.2rem solid rgba(0, 0, 0, 0.1);
-  color: #333;
+  color: #020255;
 }
 
 /* review */
@@ -258,6 +258,7 @@ section {
   margin-top: -8rem;
   margin-right: 5rem;
   padding-top: 6%;
+  padding-bottom: 6%;
   color: #020255;
 }
 
@@ -271,13 +272,13 @@ section {
 
 .review .slide i {
   font-size: 6rem;
-  color: #333;
+  color: #020255;
 }
 
 .review .slide p {
   padding-bottom: 1.5rem;
   padding-top: 3rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.8;
   color: #020255;
 }
@@ -300,7 +301,7 @@ section {
 
 .review .slide .user h3 {
   font-size: 2rem;
-  color: #333;
+  color: #020255;
   padding-bottom: 0.5rem;
 }
 
@@ -308,12 +309,9 @@ section {
   font-size: 1.3rem;
   color: #020255;
 }
-
+/* footer */
 .footer {
   background: #09094b77;
-  margin-top: 10%;
-  box-shadow: 30px 30px 80px #ffd700;
-  border-radius: 50px 50px 0 0;
 }
 
 .footer .box-container {
@@ -378,3 +376,123 @@ section {
 .footer .credit span {
   color: #020255;
 }
+
+/*----responsive styling-----*/
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem 3rem;
+  }
+  .row {
+    display: block;
+  }
+  .review {
+    background: #fff;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    margin: 1rem 0;
+    display: block;
+    padding-top: 10%;
+  }
+  .review .review-slider {
+    background: #ffd700;
+    padding: 3rem;
+    margin-top: 4rem;
+    margin-right: 1rem;
+    color: #020255;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    border-radius: 0.5rem;
+  }
+
+  .header .navbar.active {
+    right: 2rem;
+    transition: 0.4s linear;
+  }
+
+  .header .navbar a {
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+
+  .home .slide .content {
+    width: 50rem;
+  }
+
+  .review .review-slider {
+    width: 100%;
+    padding: 1rem;
+    padding-top: 15%;
+  }
+  .row {
+    display: block;
+  }
+  .review {
+    background: #fff;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    margin: 1rem 0;
+    display: block;
+    padding-top: 10%;
+  }
+  .review .review-slider {
+    background: #ffd700;
+    padding: 3rem;
+    margin-top: 4rem;
+    margin-right: 1rem;
+    color: #020255;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .slide .content {
+    width: 30rem;
+  }
+
+  .home .slide .content h3 {
+    font-size: 3rem;
+  }
+  .row {
+    display: block;
+  }
+  .review {
+    background: #fff;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    margin: 1rem 0;
+    display: block;
+    padding-top: 10%;
+  }
+  .review .review-slider {
+    background: #ffd700;
+    padding: 3rem;
+    margin-top: 4rem;
+    margin-right: 1rem;
+    color: #020255;
+  }
+}
+
